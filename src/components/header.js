@@ -11,15 +11,12 @@ export default (props) =>(
 
   <MetaContaner>
       <Title>
-           نظرة عامة عن الكلية
+          {props.bgimage}
       </Title>
       <Description>
-           كلیة علوم ذوي الاحتیاجات الخاصة كلیة متمیزة على المستوى القومي تمد المجتمع بكوادر بش
+      {props.bgimage}
       </Description>
 
-      <Button href="#one">
-         المزيد..
-      </Button>
   </MetaContaner>
 
 
@@ -42,7 +39,7 @@ const Layout = styled.section`
 const MetaContaner = styled.div`
     z-index: 10;
     right: 50px;
-    top: 29vh;
+    top: 41vh;
     position: absolute;
     width: 46%;
 `
@@ -92,11 +89,6 @@ const Title = styled.h1`
 
 
 const Description = styled.p`
-    color: #1d1d1d;
-    font-size: 22px;
-`
-
-const Button = styled.a`
     color: #1d1d1d;
     font-size: 22px;
 `

@@ -3,107 +3,122 @@ import React from "react"
 import styled from "styled-components"
 //import { graphql } from 'gatsby';
 //import Img from 'gatsby-image';
+//import { makeStyles } from "@material-ui/styles"
+import Grid from '@material-ui/core/Grid';
+/*
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+  },
+}))
+*/
+export default () => {
 
-export default () => (
-  <div style={{ height: `auto`, backgroundColor: `#E91E63`, padding: "25px" }}>
-    <SectionTitle> home </SectionTitle>
-    <SectionDescription> home </SectionDescription>
+  return (
+    <div
+      style={{ height: `auto`, backgroundColor: `#9c27b045`, padding: "25px" }}
+    >
+      <SectionTitle> home </SectionTitle>
+      <SectionDescription> home </SectionDescription>
 
-    <CardContainer>
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="أحمد طارق أحمد"
-        role="Team-Leader"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="اسلام أحمد أحمد"
-        role="Designer"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="داليا عبدالمحسن محمد"
-        role="Designer"
-        section="قسم علوم حاسب - تخاطب"
-      />
+      <CardContainer>
+        <Grid container spacing={1}>
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="أحمد طارق أحمد"
+            role="Team-Leader"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="اسلام أحمد أحمد"
+            role="Designer"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="داليا عبدالمحسن محمد"
+            role="Designer"
+            section="قسم علوم حاسب - تخاطب"
+          />
 
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="الشيماء محمد حسن"
-        role="Designer"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="نيرمين محمد عبدالرحمن"
-        role="Founder"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="هبة الله محمد عبدالله"
-        role="Founder"
-        section="قسم علوم حاسب - تخاطب"
-      />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="الشيماء محمد حسن"
+            role="Designer"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="نيرمين محمد عبدالرحمن"
+            role="Founder"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="هبة الله محمد عبدالله"
+            role="Founder"
+            section="قسم علوم حاسب - تخاطب"
+          />
 
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="حسام خالد منصور"
-        role="Founder"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="أميرة رمضان محمد"
-        role="Founder"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="مريم حمال صوفي"
-        role="Founder"
-        section="قسم علوم حاسب - تخاطب"
-      />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="حسام خالد منصور"
+            role="Founder"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="أميرة رمضان محمد"
+            role="Founder"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="مريم حمال صوفي"
+            role="Founder"
+            section="قسم علوم حاسب - تخاطب"
+          />
 
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="محمد عبدالخالق محمد"
-        role="Founder"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="محمد حسين جامع"
-        role="Founder"
-        section="قسم علوم حاسب - تخاطب"
-      />
-      <TeamCard
-        avatar="/person_2.jpg"
-        name="صفاء غاني"
-        role="Founder"
-        section="دكتورة تخاطب بكلية علوم ذوي الأحتياجات"
-      />
-    </CardContainer>
-  </div>
-)
-
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="محمد عبدالخالق محمد"
+            role="Founder"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="محمد حسين جامع"
+            role="Founder"
+            section="قسم علوم حاسب - تخاطب"
+          />
+          <TeamCard
+            avatar="/person_2.jpg"
+            name="صفاء غاني"
+            role="Founder"
+            section="دكتورة تخاطب بكلية علوم ذوي الأحتياجات"
+          />
+        </Grid>
+      </CardContainer>
+    </div>
+  )
+}
 const TeamCard = props => {
   const { avatar, name, role, section } = props
 
   return (
-    <CardLayout>
-      <Card>
-        <CardAvatar src={avatar} alt="ahmed elkordy" />
+    <Grid item xs={4} >
+        <Card>
+          <CardAvatar src={avatar} alt="ahmed elkordy" />
 
-        <CardRole>{role} </CardRole>
+          <CardRole>{role} </CardRole>
 
-        <CardName> {name} </CardName>
+          <CardName> {name} </CardName>
 
-        <CardSection>{section} </CardSection>
-      </Card>
-    </CardLayout>
+          <CardSection>{section} </CardSection>
+        </Card>
+
+    </Grid>
   )
 }
 
@@ -136,8 +151,9 @@ const Card = styled.div`
   margin: 48px 15px;
   padding: 4rem 2rem 2rem;
   text-align: center;
+  border-radius: 8px;
   &:hover {
-    box-shadow: 0 0 7px 3px #00000052;
+    box-shadow: 0 0 10px 3px #00000024;
   }
 `
 

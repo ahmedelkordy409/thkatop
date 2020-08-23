@@ -1,4 +1,4 @@
-import React from "react"
+/*import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
 //import { graphql } from 'gatsby';
@@ -91,4 +91,4 @@ const NavLinks =  styled.nav`
           display: inline-flex;
           width: auto;
     }
-`
+`*/

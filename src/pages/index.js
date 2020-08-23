@@ -1,9 +1,9 @@
 import React from "react"
-import Header from "../components/header"
-import NavBar from "../components/navbar"
 import Contaner from "../components/contaner"
-import HomeNav from "../components/homenav"
+import LayOut from "../components/layout"
 import TeamSection from "../components/teamsection"
+import ServiceSection from "../components/servicesection"
+import AboutUsSection from "../components/aboutussection"
 import SEO from "../components/seo"
 
 
@@ -14,6 +14,7 @@ export default () => {
 
 return(
   <Contaner>
+     <LayOut>
      <SEO
        lang="ar"
        title="ahmed elkordy"
@@ -21,32 +22,14 @@ return(
        meta="xxx xxx xxx xxx"
        />
 
-     <NavBar/>
 
-     <Header bgimage="/img_5.jpg" />
-
-     <HomeNav>
-
-
-     </HomeNav>
-
-
-
-
-          <div style={{height: `100vh`}}>
-          <h1 style={{color: `green`}} id="one"> home </h1>
-          </div>
-
-
+     <ServiceSection/>
+     <AboutUsSection />
      <TeamSection />
 
 
 
-
-
-
-
-
+     </LayOut>
   </Contaner>
 )
 }

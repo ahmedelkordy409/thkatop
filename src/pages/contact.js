@@ -1,9 +1,8 @@
 import React from "react"
 import Header from "../components/header"
-import NavBar from "../components/navbar"
+import OldNavBar from "../components/oldnavbar"
 import Contaner from "../components/contaner"
 import SEO from "../components/seo"
-
 
 
 
@@ -18,7 +17,7 @@ return(
        description="dev by ahmed elkordy"
        meta="xxx xxx xxx xxx"
        />
-     <NavBar/>
+     <OldNavBar/>
      <Header bgimage="/img_4.jpg" />
 
      <h1 style={{color: `green`}} id="one"> about </h1>
