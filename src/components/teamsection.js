@@ -18,8 +18,7 @@ export default () => {
     <div
       style={{ height: `auto`, backgroundColor: `#9c27b045`, padding: "25px" }}
     >
-      <SectionTitle> home </SectionTitle>
-      <SectionDescription> home </SectionDescription>
+      <SectionTitle> فريق العمل </SectionTitle>
 
       <CardContainer>
         <Grid container spacing={1}>
@@ -38,7 +37,7 @@ export default () => {
           <TeamCard
             avatar="/person_2.jpg"
             name="داليا عبدالمحسن محمد"
-            role="Designer"
+            role="Team-Leader"
             section="قسم علوم حاسب - تخاطب"
           />
 
@@ -107,7 +106,7 @@ const TeamCard = props => {
   const { avatar, name, role, section } = props
 
   return (
-    <Grid item xs={4} >
+    <Grid item  md={4}  xs={12} sm={6} >
         <Card>
           <CardAvatar src={avatar} alt="ahmed elkordy" />
 
@@ -123,14 +122,10 @@ const TeamCard = props => {
 }
 
 const SectionTitle = styled.h1`
-  display: flex;
-  width: 100%;
+  text-align: center;
+  padding: 20px 30px;
 `
 
-const SectionDescription = styled.p`
-  display: flex;
-  width: 100%;
-`
 
 const CardContainer = styled.div`
   display: flex;

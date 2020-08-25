@@ -13,8 +13,9 @@ import SEO from "../components/seo"
 export default () => {
 
 return(
-  <Contaner>
-     <LayOut>
+     <LayOut
+      background=""
+     >
      <SEO
        lang="ar"
        title="ahmed elkordy"
@@ -30,6 +31,5 @@ return(
 
 
      </LayOut>
-  </Contaner>
 )
 }

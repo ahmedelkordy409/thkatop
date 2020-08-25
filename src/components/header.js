@@ -2,29 +2,50 @@ import React from "react"
 import styled from "styled-components";
 //import { graphql } from 'gatsby';
 //import Img from 'gatsby-image';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
 
+const useStyles = makeStyles({
+  root: {
+    width: '100%',
+    maxWidth: 500,
+  },
+});
 
-export default (props) =>(
+export default (props) =>{
 
+  const classes = useStyles();
+
+return(
 <Layout>
   <Parallax background={props.bgimage}/>
+  <MetaContaner className={classes.root}>
 
-  <MetaContaner>
-      <Title>
-          {props.bgimage}
-      </Title>
-      <Description>
-      {props.bgimage}
-      </Description>
+      <Typography variant="h5" gutterBottom
+      style={{
+        color: "black",
+        lineHeight: '50px'
+       }}>
+
+         {props.subtittle}
+      </Typography>
+
+      <Typography variant="h4" gutterBottom
+       style={{
+              textShadow: "-1px 0px 0 #212120",
+              color: "#FF5722",
+              fontWeight: "bold",
+              lineHeight: '50px'
+
+        }}>
+
+         {props.tittle}
+      </Typography>
 
   </MetaContaner>
-
-
-
 </Layout>
-
 )
-
+}
 
 
 
@@ -38,10 +59,10 @@ const Layout = styled.section`
 
 const MetaContaner = styled.div`
     z-index: 10;
-    right: 50px;
-    top: 41vh;
+    right: 60px;
+    top: 46vh;
     position: absolute;
-    width: 46%;
+    width: 70%;
 `
 
 
@@ -63,6 +84,8 @@ const Parallax = styled.div`
     z-index: 2;
     position: relative;
 
+
+
       &::before {
         position: absolute;
         content: "";
@@ -74,21 +97,10 @@ const Parallax = styled.div`
         z-index: 1;
       }
 
-`
+      @media only screen and (max-device-width: 1366px) {
 
 
-const Title = styled.h1`
 
-        text-shadow: -1px 0px 0 #212120;
-        color: #FF5722;
-        font-weight: bold;
-        font-size: 37px;
+      }
 
-
-`
-
-
-const Description = styled.p`
-    color: #1d1d1d;
-    font-size: 22px;
 `

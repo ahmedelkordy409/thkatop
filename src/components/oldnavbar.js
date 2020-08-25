@@ -5,9 +5,9 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-//import { graphql } from 'gatsby';
-//import Img from 'gatsby-image';
-
+import TwitterIcon from '@material-ui/icons/Twitter';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import RedditIcon from '@material-ui/icons/Reddit';
 
 export default (props) =>{
 
@@ -19,7 +19,7 @@ return(
 
     <NavLogo>
         <h1>
-        كلية علوم ذوي الأحتياجات الخاصة
+           انت تقدر
         </h1>
     </NavLogo>
 
@@ -31,7 +31,43 @@ return(
         <Link  activeStyle={{ color: "red" }}   className='nav-link' to="/article/">ذوي الهمم </Link>
         <Link  activeStyle={{ color: "red" }} className='nav-link' to="/#about">الاطار النظري</Link>
         <Link  activeStyle={{ color: "red" }}  className='nav-link' to="/contact/">تواصل معانا </Link>
-    </NavLinks>
+
+
+        <YouTubeIcon
+        style={{
+                     margin: "9px 20px",
+                     color: " #ff1100",
+                     fontSize: "2rem",
+                     height: "2em",
+                     float: "left"
+
+              }}
+        />
+
+        <TwitterIcon
+        style={{
+                     margin: "9px 20px",
+                     color: "#03A9F4",
+                     fontSize: "2rem",
+                     height: "2em",
+                     float: "left",
+              }}
+        />
+
+
+        <RedditIcon
+        style={{
+                     margin: "9px 20px",
+                     color: " #FF5722",
+                     fontSize: "2rem",
+                     height: "2em",
+                     float: "left"
+
+              }}
+         />
+
+
+ </NavLinks>
   </Container>
 
 </NavContaner>
@@ -51,31 +87,27 @@ const NavContaner = styled.header`
 
 
 const NavLogo =  styled.div`
-    padding: 16px 30px;
+    padding: 16px 22px;
     display: block;
     width: 100%;
     h1 {
       font-size: 22px;
       color: white;
+
     }
 `
 
 
 
-const NavLinks =  styled.nav`
-    display: block;
-    width: 100%;
-    justify-content: flex-end;
-    padding: 0 15px;
-    background-color: white;
-    border-radius: 50px;
-    .nav-link {
-          font-size: 22px;
-          font-weight: bold;
-          color: black;
-          text-decoration: none;
-          padding: 27px 15px;
-          display: inline-block;
-          width: auto;
-    }
-`
+
+
+const NavLinks = styled.nav`
+
+  display: block;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0 15px;
+  background-color: white;
+  border-radius: 50px;
+
+`;

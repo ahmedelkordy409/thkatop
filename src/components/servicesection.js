@@ -28,15 +28,17 @@ export default () => {
           <ServiceCard
             icon="/svg/1.svg"
             tittle="الأرشاد الأسري"
-            description="  هي مجموعة من الفديوهات التوضيحية خاصة بأولياء الأمور لمساعدتهم علي التكيف مع الوضع الحالي للطفل .  "
-            button=" الذهاب مباشرة الي الأرشاد الأسري"
+            description=" هي مجموعه من الارشادات  تقدم لاسرة الشخص ذوي الاحتياجات الخاصه لتسهيل التعامل معه "
+            button=" الذهاب الى الارشاد الاسري "
+            link="/serviceone/"
           />
 
           <ServiceCard
             icon="/svg/2.svg"
             tittle="تدريبات للأطفال"
-            description="  نموذج تقييم الأداء لتحديد مستوي أداء الحالي للطفل وتعطي معلومات اوليه عن اولويات التدخل ما هو الخلل الذي يعاني منه الطفل"
+            description="هي عباره عن مجموعه من البرامج والفيديوهات التعليميه ل"
             button=" الذهاب الي تدريبات الأطفال "
+            link="/servicetwo/"
           />
 
           <ServiceCard
@@ -44,6 +46,7 @@ export default () => {
             tittle="تدريبات أعضاء النطق"
             description="تدريبات اعضاءالنطق للاطفال اللذين يعانون من ضعف تلك العضلات كأطفال الشلل الدماغي ومتلازمة داون"
             button=" الذهاب الي تدريبات أعضاء النطق"
+            link="/servicethree/"
           />
 
 
@@ -52,15 +55,15 @@ export default () => {
   )
 }
 const ServiceCard = props => {
-  const { icon, tittle, description, button } = props
+  const { icon, tittle, description, button, link } = props
 
   return (
-    <Grid item xs={4}>
+    <Grid item  md={4}  xs={12} sm={6} >
         <Card>
           <ServiceIcon src={icon} alt="ahmed elkordy" />
           <ServiceTittle>{tittle} </ServiceTittle>
           <ServiceDescription> {description} </ServiceDescription>
-          <Link   className='button-link' to="/"> {button} </Link>
+          <Link   className='button-link' to={link}> {button} </Link>
         </Card>
     </Grid>
   )

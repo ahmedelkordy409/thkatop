@@ -29,7 +29,7 @@ color: red;
 font-family: 'icomoon' !important;
 speak: none;
 font-style: normal;
-font-weight: normal;
+font-weight:  ;
 font-variant: normal;
 text-transform: none;
 line-height: 1;
