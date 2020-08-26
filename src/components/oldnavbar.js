@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components";
 import CssBaseline from '@material-ui/core/CssBaseline';
-import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -25,12 +24,12 @@ return(
 
 
     <NavLinks>
-        <Link  activeStyle={{ color: "red" }}   className='nav-link' to="/">الرئيسيه </Link>
+        <Link  activeStyle={{ color: "red" }}   className='nav-link' to="/">الرئيسية  </Link>
         <Link  activeStyle={{ color: "red" }} className='nav-link' to="/about/">عن الكلية </Link>
         <Link  activeStyle={{ color: "red" }}  className='nav-link' to="/#service">الخدمات</Link>
         <Link  activeStyle={{ color: "red" }}   className='nav-link' to="/article/">ذوي الهمم </Link>
-        <Link  activeStyle={{ color: "red" }} className='nav-link' to="/#about">الاطار النظري</Link>
-        <Link  activeStyle={{ color: "red" }}  className='nav-link' to="/contact/">تواصل معانا </Link>
+        <Link  activeStyle={{ color: "red" }} className='nav-link' to="/#about"> فكرة الموقع </Link>
+        <Link  activeStyle={{ color: "red" }}  className='nav-link' to="/contact/"> تواصل معنا </Link>
 
 
         <YouTubeIcon

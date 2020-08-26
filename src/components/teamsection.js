@@ -16,7 +16,7 @@ export default () => {
 
   return (
     <div
-      style={{ height: `auto`, backgroundColor: `#9c27b045`, padding: "25px" }}
+      style={{ height: `auto`, backgroundColor: `rgb(23 162 184 / 32%)`, padding: "25px" }}
     >
       <SectionTitle> فريق العمل </SectionTitle>
 
@@ -74,7 +74,7 @@ export default () => {
           />
           <TeamCard
             avatar="/person_2.jpg"
-            name="مريم حمال صوفي"
+            name="مريم جمال صوفي"
             role="Founder"
             section="قسم علوم حاسب - تخاطب"
           />
@@ -93,8 +93,8 @@ export default () => {
           />
           <TeamCard
             avatar="/person_2.jpg"
-            name="صفاء غاني"
-            role="Founder"
+            name="د . صفاء إبراهيم"
+            role="Doctor"
             section="دكتورة تخاطب بكلية علوم ذوي الأحتياجات"
           />
         </Grid>
@@ -131,12 +131,6 @@ const CardContainer = styled.div`
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-`
-
-const CardLayout = styled.div`
-  flex: none;
-  width: 33.33333%;
-  display: block;
 `
 
 const Card = styled.div`

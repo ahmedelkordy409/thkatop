@@ -36,7 +36,7 @@ export default () => {
           <ServiceCard
             icon="/svg/2.svg"
             tittle="تدريبات للأطفال"
-            description="هي عباره عن مجموعه من البرامج والفيديوهات التعليميه ل"
+            description="هي عباره عن مجموعه من البرامج والفيديوهات التعليميه، تساعد علي تنمية مهارات الاطفال"
             button=" الذهاب الي تدريبات الأطفال "
             link="/servicetwo/"
           />
@@ -116,9 +116,3 @@ const ServiceDescription = styled.p`
     color: #777;
     line-height: 2;
     `
-
-const ServiceButton = styled.a`
-font-size: 13px;
-padding: 18px 0 10px;
-color: #616161;
-`

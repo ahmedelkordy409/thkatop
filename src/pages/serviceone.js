@@ -1,8 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
-import Contaner from "../components/contaner"
 import LayOut from "../components/layout"
-
 import Container from '@material-ui/core/Container';
 import styled from "styled-components"
 
@@ -17,7 +15,7 @@ return(
 
 
   <LayOut
-  background=""
+  background="/img_1.jpg"
   >
      <SEO
        lang="ar"

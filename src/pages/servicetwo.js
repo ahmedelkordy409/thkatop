@@ -62,8 +62,8 @@ const games = [
 {
   id: 5,
   image: "/games/5.jpg",
-  tittle: "لعبه 1",
-  url: "https://drive.google.com/file/d/1o3W7tko4Mc1Cx2SBavUAtfaxSWjffCuf/view?usp=drivesdk",
+  tittle: "لعبه الارقام",
+  url: "https://1drv.ms/p/s!AgG2GfpF2qNdadgdnIQjurufTf4",
 },
 ];
 
@@ -122,7 +122,7 @@ export default () => {
 
 return(
   <LayOut
-    background=""
+    background="/img_5.jpg"
   >
      <SEO
        lang="ar"
@@ -168,11 +168,6 @@ return(
 
 
 
-
-
-
-
-
                   <Dialog fullScreen open={open} onClose={handleClose} TransitionComponent={Transition}>
                     <AppBar className={classes.appBar}>
                       <Toolbar>
@@ -191,6 +186,7 @@ return(
 
                     <iframe
                         src={game.url}
+                        title={game.tittle}
                         width="100%"
                         height="100%"
                         frameBorder="0"
@@ -198,15 +194,7 @@ return(
 
 
                     </iframe>
-
-
-
-
-
                   </Dialog>
-
-
-
                </Grid>
          ))}
       </Grid>
@@ -216,11 +204,3 @@ return(
   </LayOut>
 )
 }
-
-
-/*
-
-const STittle = styled.h1`
-    color: #F44336;
-`
-*/

@@ -83,7 +83,7 @@ export default () => {
 
 return(
   <LayOut
-   background=""
+  background="/img_3.jpg"
   >
      <SEO
        lang="ar"

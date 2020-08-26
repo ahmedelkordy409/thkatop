@@ -1,5 +1,4 @@
 import React from "react"
-import Contaner from "../components/contaner"
 import LayOut from "../components/layout"
 import TeamSection from "../components/teamsection"
 import ServiceSection from "../components/servicesection"
@@ -14,7 +13,7 @@ export default () => {
 
 return(
      <LayOut
-      background=""
+      background="/img_3.jpg"
      >
      <SEO
        lang="ar"

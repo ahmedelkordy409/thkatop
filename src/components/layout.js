@@ -6,7 +6,7 @@ import Container from '@material-ui/core/Container';
 
 
 export default (props) =>(
-<Container>
+<Container style={{padding: 0}}>
 <OldNavBar/>
 
 <Header

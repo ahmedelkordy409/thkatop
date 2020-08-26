@@ -13,15 +13,13 @@ export default () => {
 
 <div className="tittle_head">
 <Typography variant="h4" gutterBottom style={{lineHeight: 2}}>
-   فكر عمل الموقع
+فكرة عمل الموقع
 </Typography>
 <Typography variant="body1" style={{lineHeight: 2}} gutterBottom>
-  كلیة علوم ذوي الاحتیاجات الخاصة كلیة متمیزة على المستوى القومي تمد المجتمع بكوادر بش
+أول موقع في الوطن العربي خاص بأضطرابات اللغة والتخاطب .
 </Typography>
 
 </div>
-
-
 
 
     <Grid container spacing={1}>
