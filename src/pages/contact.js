@@ -143,8 +143,6 @@ return(
 
 
 
-
-     <h1 style={{color: `green`}} id="one"> about </h1>
   </LayOut>
 )
 }
