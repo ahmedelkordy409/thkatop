@@ -8,4 +8,35 @@ body {
 
 *{
   text-decoration: none !important;
+
+}
+
+/*****************************************
+**  video section style
+******************************************/
+.video_section {
+  height: auto;
+  padding: 136px 200px;
+}
+
+.video_section .tittle_head {
+  height: auto;
+  padding: 50px 0;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  .video_section {
+    padding: 56px 36px;
+  }
+
+  .tittle_head {
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+
 }
