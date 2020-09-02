@@ -22,10 +22,10 @@ return(
   <MetaContaner className={classes.root}>
 
       <Typography variant="h5" gutterBottom
-      style={{
-        color: "black",
-        lineHeight: '50px'
-       }}>
+        style={{
+          color: "black",
+          lineHeight: '50px'
+         }}>
 
          {props.subtittle}
       </Typography>
@@ -98,9 +98,7 @@ const Parallax = styled.div`
       }
 
       @media only screen and (max-device-width: 1366px) {
-
-
-
+         background-position: 83% 4px;
       }
 
 `

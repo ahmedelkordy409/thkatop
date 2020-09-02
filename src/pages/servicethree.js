@@ -5,6 +5,7 @@ import Container from '@material-ui/core/Container';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import ReactPlayer from 'react-player/youtube'
 import Typography from '@material-ui/core/Typography';
+import styled from "styled-components"
 
 
 
@@ -35,7 +36,7 @@ const videos= [
   url: "https://youtu.be/GmTVLn8RWEg"
 },
 {
-  _id: 5,
+  _id: 6,
   tittle: "تدريب يساعد علي التأزر الحركي البصري",
   url: "https://youtu.be/J9KeEZ_MVFw"
 }
@@ -58,34 +59,33 @@ return(
 
      <CssBaseline/>
 
-     <Container fixed style={{padding: "60px 140px"}}>
+     <Container fixed   className='video_section'>
       <h1>   البرامج التعليميه  </h1>
 
 
-{videos.map((video,index)=>(
-  <>
+      {videos.map((video,index)=>(
+        <VideoWarrap key={index}>
 
-      <Typography variant="h4" gutterBottom style={{lineHeight: 2}}>
-      <span style={{
-        color: "orange",
-        paddingLeft: 15
-      }}>
-      #{video.id}
-      </span>
-      {video.tittle}
-      </Typography>
+            <Typography variant="h4" gutterBottom style={{lineHeight: '1.8'}}>
+            <span style={{
+              color: "orange",
+              paddingLeft: 15
+            }}>
+            #{video._id}
+            </span>
+            {video.tittle}
+            </Typography>
 
 
-      <ReactPlayer
-        className='react-player'
-        url={video.url}
-        width='100%'
-        height='40vh'
-      />
+            <ReactPlayer
+              className='react-player video_player'
+              url={video.url}
+              width='100%'
+            />
 
-  </>
+        </VideoWarrap>
 
-))}
+      ))}
 
 
 
@@ -94,3 +94,58 @@ return(
   </LayOut>
 )
 }
+
+
+
+
+const VideoWarrap = styled.h1`
+    margin: 0 0 90px;
+
+    .video_section {
+      height: auto;
+      padding: 136px 200px;
+    }
+
+
+    .video_section .tittle_head {
+      height: auto;
+      padding: 50px 0;
+    }
+
+    .video_section .video_player {
+      width: 100%;
+      height: 340px;
+
+    }
+
+
+
+    /*****************************************
+    **  video section style
+    ******************************************/
+
+
+    @media only screen and (max-width: 768px) {
+
+      .video_section {
+        padding: 56px 5px;
+      }
+
+      .tittle_head {
+        height: auto;
+        padding: 50px 0;
+        text-align: center;
+      }
+
+      .video_section .video_player {
+        width: 100%;
+        height: 170px;
+        margin: 0 0 90px;
+      }
+
+
+
+    }
+
+
+`

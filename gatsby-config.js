@@ -14,6 +14,12 @@
     },
     plugins: [
       {
+        resolve: `gatsby-plugin-styled-components`,
+        options: {
+          displayName: false
+        },
+      },
+      {
         resolve: `gatsby-source-filesystem`,
         options: {
           path: `${__dirname}/src/images`,
@@ -30,6 +36,7 @@
       },
       'gatsby-transformer-sharp',
       'gatsby-plugin-react-helmet',
+      'gatsby-plugin-top-layout',
       {
         resolve: `gatsby-plugin-manifest`,
         options: {
@@ -43,6 +50,14 @@
         }
       },
       'gatsby-plugin-offline',
-      'gatsby-plugin-material-ui'
+      {
+        resolve: 'gatsby-plugin-material-ui',
+        // If you want to use styled components you should change the injection order.
+        options: {
+           stylesProvider: {
+             injectFirst: true,
+           },
+        },
+      }
     ]
   };

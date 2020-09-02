@@ -47,7 +47,8 @@ return(
        />
 
 
-       <CssBaseline />
+  <CssBaseline />
+   <Container>
        <Container>
         <Grid container spacing={10} >
             <Grid item md={8}  xs={12} sm={12}>
@@ -56,7 +57,7 @@ return(
                         <TextField
                           required
                           id="outlined-required"
-                          label="frist name"
+                          label="الاسم الاول"
                           variant="outlined"
                           className={classes.halfwidth}
                           style={{paddingLeft: 25}}
@@ -66,7 +67,7 @@ return(
                         <TextField
                           id="outlined-disabled"
                           variant="outlined"
-                          label="last name"
+                          label="الاسم الاخير"
                           className={classes.halfwidth}
                         />
 
@@ -77,7 +78,7 @@ return(
                         <TextField
                           fullWidth
                           id="outlined-password-input"
-                          label="email"
+                          label="الايميل"
                           autoComplete="current-password"
                           variant="outlined"
                         />
@@ -87,7 +88,7 @@ return(
                         <TextField
                         fullWidth
                         id="outlined-multiline-static"
-                        label="message"
+                        label="الرسالة"
                         multiline
                         rows={6}
                         variant="outlined"
@@ -96,7 +97,7 @@ return(
                         </div>
 
                           <Button variant="contained" color="secondary">
-                            send message
+                            ارسال
                           </Button>
                       </form>
 
@@ -141,6 +142,7 @@ return(
        </Grid>
        </Container>
 
+       </Container>
 
 
   </LayOut>

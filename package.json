@@ -32,6 +32,8 @@
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-styled-components-dark-mode": "^1.1.1",
     "gatsby-transformer-sharp": "^2.5.13",
+    "jss": "^10.4.0",
+    "jss-rtl": "^0.3.0",
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
