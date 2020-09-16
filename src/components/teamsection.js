@@ -1,10 +1,6 @@
 import React from "react"
-//import { Link } from "gatsby"
 import styled from "styled-components"
-//import { graphql } from 'gatsby';
-//import Img from 'gatsby-image';
-//import { makeStyles } from "@material-ui/styles"
-import Grid from '@material-ui/core/Grid';
+import Grid from "@material-ui/core/Grid"
 /*
 const useStyles = makeStyles(theme => ({
   root: {
@@ -12,112 +8,109 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 */
-export default () => {
 
+const teamData = [
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/nRL0c2T/3.jpg?w=100&h=100&f=auto",
+    name: "د . صفاء إبراهيم",
+    role: "Doctor",
+    section: "دكتورة تخاطب بكلية علوم ذوي الأحتياجات",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/5kTtdp4/1.jpg?w=100&h=100&f=auto",
+    name: "أحمد طارق أحمد",
+    role: "Team-Leader",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar:
+      "https://cdn.statically.io/img/i.ibb.co/VmF0JXv/Islam.jpg?w=100&h=100",
+    name: "اسلام أحمد أحمد",
+    role: "Designer",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/mR9Q9Yx/dalia.jpg?w=100&h=100&f=auto",
+    name: "داليا عبدالمحسن محمد",
+    role: "Team-Leader",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/C2QgYHb/2.jpg?w=100&h=100&f=auto",
+    name: "الشيماء محمد حسن",
+    role: "Designer",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/gRdMB1x/nermen-auto-x2.jpg?w=100&h=100&f=auto",
+    name: "نيرمين محمد عبدالرحمن",
+    role: "Founder",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/9ZL0LxZ/hepa-optimized-auto-x1.jpg?w=100&h=100&f=auto",
+    name: "هبة الله محمد عبدالله",
+    role: "Founder",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/QpLbDq0/hossam.jpg?w=100&h=100&f=auto",
+    name: "حسام خالد منصور",
+    role: "Founder",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/Gc5PW8h/amira1.jpg?w=100&h=100&f=auto",
+    name: "أميرة رمضان محمد",
+    role: "Founder",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/RyHFb15/marim.jpg?w=100&h=100&f=auto",
+    name: "مريم جمال صوفي",
+    role: "Founder",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/qRvbJ10/beta.jpg?w=100&h=100&f=auto",
+    name: "محمد عبدالخالق محمد",
+    role: "Founder",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+  {
+    avatar: "https://cdn.statically.io/img/i.ibb.co/ckXXVPY/hussien.jpg?w=100&h=100&f=auto",
+    name: "محمد حسين جامع",
+    role: "Founder",
+    section: "قسم علوم حاسب - تخاطب",
+  },
+]
+
+export default () => {
   return (
     <div
-      style={{ height: `auto`, backgroundColor: `rgb(23 162 184 / 32%)`, padding: "25px" }}
+      style={{
+        height: `auto`,
+        backgroundColor: `rgb(23 162 184 / 32%)`,
+        padding: "25px",
+      }}
     >
       <SectionTitle> فريق العمل </SectionTitle>
 
       <CardContainer>
         <Grid container spacing={1}>
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="أحمد طارق أحمد"
-            role="Team-Leader"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="اسلام أحمد أحمد"
-            role="Designer"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="داليا عبدالمحسن محمد"
-            role="Team-Leader"
-            section="قسم علوم حاسب - تخاطب"
-          />
-
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="الشيماء محمد حسن"
-            role="Designer"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="نيرمين محمد عبدالرحمن"
-            role="Founder"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="هبة الله محمد عبدالله"
-            role="Founder"
-            section="قسم علوم حاسب - تخاطب"
-          />
-
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="حسام خالد منصور"
-            role="Founder"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="أميرة رمضان محمد"
-            role="Founder"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="مريم جمال صوفي"
-            role="Founder"
-            section="قسم علوم حاسب - تخاطب"
-          />
-
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="محمد عبدالخالق محمد"
-            role="Founder"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="محمد حسين جامع"
-            role="Founder"
-            section="قسم علوم حاسب - تخاطب"
-          />
-          <TeamCard
-            avatar="/person_2.jpg"
-            name="د . صفاء إبراهيم"
-            role="Doctor"
-            section="دكتورة تخاطب بكلية علوم ذوي الأحتياجات"
-          />
+          {teamData.map((team, index) => (
+            <Grid item md={4} xs={12} sm={6}>
+              <Card>
+                <CardAvatar src={team.avatar} alt="ahmed elkordy" />
+                <CardRole>{team.role} </CardRole>
+                <CardName> {team.name} </CardName>
+                <CardSection>{team.section} </CardSection>
+              </Card>
+            </Grid>
+          ))}
         </Grid>
       </CardContainer>
     </div>
-  )
-}
-const TeamCard = props => {
-  const { avatar, name, role, section } = props
-
-  return (
-    <Grid item  md={4}  xs={12} sm={6} >
-        <Card>
-          <CardAvatar src={avatar} alt="ahmed elkordy" />
-
-          <CardRole>{role} </CardRole>
-
-          <CardName> {name} </CardName>
-
-          <CardSection>{section} </CardSection>
-        </Card>
-
-    </Grid>
   )
 }
 
@@ -125,7 +118,6 @@ const SectionTitle = styled.h1`
   text-align: center;
   padding: 20px 30px;
 `
-
 
 const CardContainer = styled.div`
   display: flex;
@@ -151,6 +143,7 @@ const CardAvatar = styled.img`
   top: -46px;
   right: 35%;
   height: 90px;
+  width: 90px;
   border-radius: 50%;
   border: 4px solid #fff;
 `
