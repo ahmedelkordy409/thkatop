@@ -184,16 +184,7 @@ return(
 
 
 
-                    <iframe
-                        src={game.url}
-                        title={game.tittle}
-                        width="100%"
-                        height="100%"
-                        frameBorder="0"
-                    >
-
-
-                    </iframe>
+  <iframe src="https://onedrive.live.com/embed?cid=1279CF6FCC04ACB9&resid=1279CF6FCC04ACB9%21124&authkey=AMtUyBp8Cd2UCco&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
                   </Dialog>
                </Grid>
          ))}
