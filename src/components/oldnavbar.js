@@ -70,7 +70,7 @@ export default props => {
             //  كلية علوم ذوي الاحتياجات الخاصة
           }
           <img
-            src="https://cdn.statically.io/img/i.ibb.co/3pbNz2c/logo.jpg?w=100px&h=100px&f=auto"
+            src="https://cdn.statically.io/img/i.ibb.co/2cnbqPb/last-logo1.jpg"
             alt=" كلية علوم ذوي الاحتياجات الخاصة"
           />
         </NavLogo>
