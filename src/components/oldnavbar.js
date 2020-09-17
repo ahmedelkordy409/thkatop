@@ -70,7 +70,7 @@ export default props => {
             //  كلية علوم ذوي الاحتياجات الخاصة
           }
           <img
-            src="https://cdn.statically.io/img/i.ibb.co/2cnbqPb/last-logo1.jpg"
+            src="https://cdn.statically.io/img/i.ibb.co/kSZCvHs/rsz-last-logo1.png?f=auto"
             alt=" كلية علوم ذوي الاحتياجات الخاصة"
           />
         </NavLogo>
@@ -148,11 +148,12 @@ const NavContaner = styled.header`
 `
 
 const NavLogo = styled.div`
-  padding: 16px 22px;
+  padding: 10px 22px;
   display: block;
   width: 100%;
   img {
     height: 100px;
+    background-color: transperant;
   }
 `
 
