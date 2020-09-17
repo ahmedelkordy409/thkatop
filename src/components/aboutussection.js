@@ -27,7 +27,7 @@ export default () => {
           <VideoWarrp>
               <ReactPlayer
                 className='react-player'
-                url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+                url='https://www.youtube.com/watch?v=TwQbVj5hDHA'
                 width='100%'
                 height='100%'
               />

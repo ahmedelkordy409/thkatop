@@ -13,7 +13,7 @@ const teamData = [
   {
     avatar: "https://cdn.statically.io/img/i.ibb.co/nRL0c2T/3.jpg?w=100&h=100&f=auto",
     name: "د . صفاء إبراهيم",
-    role: "Doctor",
+    role: "المشرف على المشروع",
     section: "دكتورة تخاطب بكلية علوم ذوي الأحتياجات",
   },
   {

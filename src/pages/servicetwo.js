@@ -38,32 +38,32 @@ const games = [
 {
   id: 1,
   image: "/games/1.jpg",
-  tittle: "لعبه 1",
-  url: "https://drive.google.com/file/d/1o3W7tko4Mc1Cx2SBavUAtfaxSWjffCuf/view?usp=drivesdk",
+  tittle: "برنامج الالعاب",
+  url: "https://onedrive.live.com/embed?cid=1279CF6FCC04ACB9&resid=1279CF6FCC04ACB9%21127&authkey=AA7I42FMiQbWuaI&em=2",
 },
 {
   id: 2,
   image: "/games/2.jpg",
-  tittle: "لعبه 1",
-  url: "https://drive.google.com/file/d/1o3W7tko4Mc1Cx2SBavUAtfaxSWjffCuf/view?usp=drivesdk",
+  tittle: "برنامج لتعليم الارقام",
+  url: "https://onedrive.live.com/embed?cid=1279CF6FCC04ACB9&resid=1279CF6FCC04ACB9%21126&authkey=ANMII02qejK0vF0&em=2",
 },
 {
   id: 3,
   image: "/games/3.jpg",
-  tittle: "لعبه 1",
-  url: "https://drive.google.com/file/d/1o3W7tko4Mc1Cx2SBavUAtfaxSWjffCuf/view?usp=drivesdk",
+  tittle: "برنامج تعلم اللغه الانجليزيه",
+  url: "https://onedrive.live.com/embed?cid=1279CF6FCC04ACB9&resid=1279CF6FCC04ACB9%21130&authkey=ADSzHx4A4gdYPos&em=2",
 },
 {
   id: 4,
   image: "/games/4.jpg",
-  tittle: "لعبه 1",
-  url: "https://drive.google.com/file/d/1o3W7tko4Mc1Cx2SBavUAtfaxSWjffCuf/view?usp=drivesdk",
+  tittle: "برنامج للتعرف على المجموعه الشمسيه",
+  url: "https://onedrive.live.com/embed?cid=1279CF6FCC04ACB9&resid=1279CF6FCC04ACB9%21124&authkey=AMtUyBp8Cd2UCco&em=2",
 },
 {
   id: 5,
   image: "/games/5.jpg",
-  tittle: "لعبه الارقام",
-  url: "https://1drv.ms/p/s!AgG2GfpF2qNdadgdnIQjurufTf4",
+  tittle: " برنامج العمليات الحسابيه",
+  url: "https://onedrive.live.com/embed?cid=1279CF6FCC04ACB9&resid=1279CF6FCC04ACB9%21129&authkey=AMoaakKoY5gVUGc&em=2",
 },
 ];
 
@@ -180,11 +180,16 @@ return(
                       </Toolbar>
                     </AppBar>
 
+                     <iframe
+                         src={game.url}
+                         width="100%"
+                         height="100%"
+                         frameborder="0"
+                         scrolling="no"
+                         title={game.tittle}
+                         >
+                     </iframe>
 
-
-
-
-  <iframe src="https://onedrive.live.com/embed?cid=1279CF6FCC04ACB9&resid=1279CF6FCC04ACB9%21124&authkey=AMtUyBp8Cd2UCco&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
                   </Dialog>
                </Grid>
          ))}
